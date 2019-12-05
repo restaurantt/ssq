@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home" style="margin-top:180px;">
     <div>
       <ul>
       <li><BallsView v-bind:redArray = redsArray v-bind:blue = blueNum /></li>
@@ -94,13 +94,14 @@ function getRandomNumber(isRed) {
 
 <style>
 .anim{
-    width: 100px;
+    width: 150px;
     height: 60px;
-    background-color: green;
+    border: 2px solid red;
+    background-color: white;
     text-align: center;
     border-radius:10px;
     margin:0 auto;
-    margin-top:30px;
+    margin-top:80px;
 }
 .animat{
   animation:mymove 5s infinite;
@@ -125,11 +126,11 @@ function getRandomNumber(isRed) {
   }
 .button {
   display: block;
-  margin: 10px 0;
+  margin: 0px 0;
   padding: 10px;
   width: 100%;
   height: 100%;
-  font-size: 20px;
+  font-size: 30px;
   color: red;
 }
 </style>

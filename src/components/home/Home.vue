@@ -1,12 +1,12 @@
 <template>
-  <div class="home" style="margin-top:180px;">
+  <div class="home" style="margin-top:100px;">
     <div>
       <ul>
       <li><BallsView v-bind:redArray = redsArray v-bind:blue = blueNum /></li>
       </ul>
     </div>
     <div id="randombtn" class="anim animat">
-      <button class="button" v-on:click="randomaction">随机</button>
+      <button class="button" v-on:click="randomaction">随机选号</button>
     </div>
   </div>
 </template>
@@ -94,14 +94,15 @@ function getRandomNumber(isRed) {
 
 <style>
 .anim{
-    width: 150px;
-    height: 60px;
-    border: 2px solid red;
-    background-color: white;
+    width: 120px;
+    height: 40px;
+    /* border: 2px solid red;
+    background-color: white; */
     text-align: center;
     border-radius:10px;
     margin:0 auto;
-    margin-top:80px;
+    margin-top:60px;
+    margin-bottom: 30px;
 }
 .animat{
   animation:mymove 5s infinite;
@@ -125,12 +126,16 @@ function getRandomNumber(isRed) {
     }
   }
 .button {
+  background-color: white;
+  border: 2px solid red;
+  background-color: white;
+  border-radius:10px;
   display: block;
   margin: 0px 0;
-  padding: 10px;
+  padding: 0px;
   width: 100%;
   height: 100%;
-  font-size: 30px;
+  font-size: 18px;
   color: red;
 }
 </style>

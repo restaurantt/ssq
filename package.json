@@ -6,8 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "npm run serve",
-    "heroku-postinstall": "npm install && npm run build"
+    "start": "npm run serve"
   },
   "dependencies": {
     "amfe-flexible": "^2.2.1",
